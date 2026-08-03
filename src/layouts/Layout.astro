@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 
 interface Props {
 	title?: string;
@@ -11,6 +13,7 @@ const {
 	description = "Building CRM, Automation & GTM Systems for B2B SaaS."
 } = Astro.props;
 ---
+
 
 <!doctype html>
 <html lang="en">
@@ -24,15 +27,37 @@ const {
 
 		<title>{title}</title>
 
-		<meta
-			name="description"
-			content={description}
-		/>
+<meta name="description" content={description} />
+
+<meta name="author" content="Mrityunjay Kumar" />
+
+<meta
+  name="keywords"
+  content="Growth Marketing, Marketing Operations, Salesforce, CRM, GTM, n8n, Automation, B2B SaaS"
+/>
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+<link rel="canonical" href="https://mkumar.xyz" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content="https://mkumar.xyz" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+	
 	</head>
 
 	<body>
 
-		<slot />
 
-	</body>
+
+  <slot />
+
+  <Footer />
+
+</body>
 </html>
