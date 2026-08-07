@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import "../scripts/posthog";
 
 interface Props {
 	title?: string;
@@ -51,6 +52,22 @@ const {
 	
 	</head>
 
+<script type="module">
+  import "../scripts/posthog.ts";
+</script>
+<script>
+!function(key) {
+  if (window.reb2b) return;
+  window.reb2b = { loaded: true };
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://ddwl4m2hdecbv.cloudfront.net/b/" + key + "/" + key + ".js.gz";
+  document.getElementsByTagName("script")[0].parentNode.insertBefore(
+    s,
+    document.getElementsByTagName("script")[0]
+  );
+}("46DJ4HVWV061");
+</script>
 	<body>
 
 

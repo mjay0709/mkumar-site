@@ -135,7 +135,20 @@ import Layout from "../layouts/Layout.astro";
 
   </main>
 <script>
+import posthog from "posthog-js";
   const form = document.getElementById("demoForm");
+
+let formStarted = false;
+
+form?.addEventListener("focusin", () => {
+  if (formStarted) return;
+
+  formStarted = true;
+
+  console.log("Form started");
+
+  posthog.capture("demo_form_started");
+});
 
   form?.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -143,6 +156,11 @@ import Layout from "../layouts/Layout.astro";
     const formData = new FormData(form);
 
     const payload = Object.fromEntries(formData.entries());
+    posthog.capture("demo_submitted", {
+  company: payload.company,
+  crm: payload.crm,
+  job_title: payload.jobTitle
+});
 
     try {
       const response = await fetch(
@@ -157,6 +175,17 @@ import Layout from "../layouts/Layout.astro";
       );
 
       if (response.ok) {
+        posthog.identify(payload.email, {
+  name: `${payload.firstName} ${payload.lastName}`,
+  company: payload.company,
+  crm: payload.crm,
+  job_title: payload.jobTitle,
+});
+posthog.capture("demo_submitted", {
+  company: payload.company,
+  crm: payload.crm,
+  job_title: payload.jobTitle,
+});
         alert("Demo request received by n8n!");
         form.reset();
       } else {
