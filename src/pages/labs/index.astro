@@ -1,85 +1,30 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Navbar from "../../components/Navbar.astro";
-import Footer from "../../components/Footer.astro";
+import LabsHero from "../../components/labs/LabsHero.astro";
+import LeadIntelligenceCard from "../../components/labs/LeadIntelligenceCard.astro";
+import GrowthExecutionCard from "../../components/labs/GrowthExecutionCard.astro";
+import RoadmapSection from "../../components/labs/RoadmapSection.astro";
+import BuilderSection from "../../components/labs/BuilderSection.astro";
+
+
+import "../../styles/labs.css";
+
+
 ---
 
-<Layout title="Labs | MK">
+<Layout
+  title="GTM Execution | MK"
+  description="A concept GTM workspace demonstrating end-to-end B2B SaaS marketing execution.">
 
-<Navbar />
+  <LabsHero />
 
-<main class="mx-auto max-w-6xl px-6 py-24">
+  <LeadIntelligenceCard />
 
-<p class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
-Labs
-</p>
+  <GrowthExecutionCard />
 
-<h1 class="text-5xl font-bold">
-Projects I'm Building
-</h1>
+  <RoadmapSection />
 
-<div class="mt-16 grid gap-8 md:grid-cols-2">
+  <BuilderSection />
 
-<div class="rounded-xl border p-8">
-
-<h2 class="text-2xl font-semibold">
-Revenue Operating System
-</h2>
-
-<p class="mt-4 text-gray-600">
-End-to-end GTM platform integrating website, Salesforce,
-automation, SQL, analytics and AI.
-</p>
-
-<p class="mt-8 font-medium text-blue-600">
-<a
-  href="/labs/revenue-operating-system"
-  class="mt-8 inline-block font-semibold text-blue-600"
->
-Explore →
-</a>
-</p>
-
-</div>
-
-<div class="rounded-xl border p-8 opacity-60">
-
-<h2 class="text-2xl font-semibold">
-AI SDR
-</h2>
-
-<p class="mt-4 text-gray-600">
-Coming Soon
-</p>
-
-</div>
-
-<div class="rounded-xl border p-8 opacity-60">
-
-<h2 class="text-2xl font-semibold">
-SEO Intelligence
-</h2>
-
-<p class="mt-4 text-gray-600">
-Coming Soon
-</p>
-
-</div>
-
-<div class="rounded-xl border p-8 opacity-60">
-
-<h2 class="text-2xl font-semibold">
-Content Engine
-</h2>
-
-<p class="mt-4 text-gray-600">
-Coming Soon
-</p>
-
-</div>
-
-</div>
-
-</main>
-
+   
 </Layout>

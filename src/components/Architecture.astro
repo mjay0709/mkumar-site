@@ -1,0 +1,382 @@
+<section id="architecture" class="architecture">
+
+    <div class="architecture-header">
+
+        <p class="eyebrow">
+            SYSTEM ARCHITECTURE
+        </p>
+
+        <h2>
+            AI-Powered Lead Intelligence Pipeline
+        </h2>
+
+        <p>
+
+            Every demo request is automatically qualified,
+            enriched and routed before reaching the sales team.
+
+        </p>
+
+    </div>
+
+    <div class="architecture-container">
+
+        <!-- LEFT -->
+
+        <div class="architecture-canvas">
+        <svg class="flow-lines"
+     viewBox="0 0 900 900"
+     preserveAspectRatio="none">
+
+    <!-- Demo -> Normalize -->
+
+    <path
+        d="M450 70
+           L450 150"
+        class="line"/>
+
+    <!-- Normalize -> Slack -->
+
+    <path
+        d="M450 170
+           C340 220 250 240 170 270"
+        class="line"/>
+
+    <!-- Normalize -> Database -->
+
+    <path
+        d="M450 170
+           L450 270"
+        class="line"/>
+
+    <!-- Normalize -> AI -->
+
+    <path
+        d="M450 170
+           C560 220 650 240 730 270"
+        class="line"/>
+
+    <!-- AI -> Parse -->
+
+    <path
+        d="M730 330
+           L730 420"
+        class="line"/>
+
+    <!-- Database -> Merge -->
+
+    <path
+        d="M450 330
+           L450 520"
+        class="line"/>
+
+    <!-- Parse -> Merge -->
+
+    <path
+        d="M730 480
+           C730 520 640 560 450 560"
+        class="line"/>
+
+    <!-- Merge -> Update -->
+
+    <path
+        d="M450 600
+           C390 650 340 670 280 700"
+        class="line"/>
+
+    <!-- Merge -> Analytics -->
+
+    <path
+        d="M450 600
+           C510 650 560 670 620 700"
+        class="line"/>
+
+    <!-- Update -> Decision -->
+
+    <path
+        d="M280 760
+           C280 820 450 820 450 840"
+        class="line"/>
+
+    <!-- Decision -> Sales -->
+
+    <path
+        d="M450 860
+           L450 940"
+        class="line"/>
+
+</svg>
+
+            <div class="flow">
+
+    <!-- Row 1 -->
+
+    <div class="flow-node form">
+        <div class="icon">📝</div>
+        <div>
+            <h4>Demo Form</h4>
+            <span>Website</span>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+
+    <div class="flow-node webhook">
+        <div class="icon">⚡</div>
+        <div>
+            <h4>Normalize Input</h4>
+            <span>n8n</span>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+
+    <div class="flow-row three">
+
+        <div class="flow-node notify">
+
+            <div class="icon">💬</div>
+
+            <div>
+
+                <h4>Notify Ops</h4>
+
+                <span>Slack #leads</span>
+
+            </div>
+
+        </div>
+
+        <div class="flow-node database">
+
+            <div class="icon">🗄️</div>
+
+            <div>
+
+                <h4>Store Lead</h4>
+
+                <span>Supabase</span>
+
+            </div>
+
+        </div>
+
+        <div class="flow-node ai">
+
+            <div class="icon">🤖</div>
+
+            <div>
+
+                <h4>AI Qualification</h4>
+
+                <span>Groq</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Row 4 -->
+
+    <div class="flow-node parse">
+
+        <div class="icon">📄</div>
+
+        <div>
+
+            <h4>Parse Response</h4>
+
+            <span>Structured Output</span>
+
+        </div>
+
+    </div>
+
+    <!-- Row 5 -->
+
+    <div class="flow-node merge">
+
+        <div class="icon">🔀</div>
+
+        <div>
+
+            <h4>Merge Results</h4>
+
+            <span>Combine AI + CRM</span>
+
+        </div>
+
+    </div>
+
+    <!-- Row 6 -->
+
+    <div class="flow-row two">
+
+        <div class="flow-node update">
+
+            <div class="icon">💾</div>
+
+            <div>
+
+                <h4>Update Lead</h4>
+
+                <span>Supabase</span>
+
+            </div>
+
+        </div>
+
+        <div class="flow-node analytics">
+
+            <div class="icon">📈</div>
+
+            <div>
+
+                <h4>Analytics</h4>
+
+                <span>PostHog</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Row 7 -->
+
+    <div class="flow-node decision">
+
+        <div class="icon">🎯</div>
+
+        <div>
+
+            <h4>Priority Check</h4>
+
+            <span>High Priority?</span>
+
+        </div>
+
+    </div>
+
+    <!-- Row 8 -->
+
+    <div class="flow-node sales">
+
+        <div class="icon">🚀</div>
+
+        <div>
+
+            <h4>Notify Sales</h4>
+
+            <span>Slack #sales</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="architecture-sidebar">
+
+            <div class="sidebar-card active">
+
+                <span class="step-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h3>
+                        Receive Lead
+                    </h3>
+
+                    <p>
+
+                        Every demo request enters the workflow
+                        through an n8n webhook.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-card">
+
+                <span class="step-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h3>
+                        Normalize
+                    </h3>
+
+                    <p>
+
+                        Standardize fields before downstream
+                        processing.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-card">
+
+                <span class="step-number">
+                    03
+                </span>
+
+                <div>
+
+                    <h3>
+                        AI Qualification
+                    </h3>
+
+                    <p>
+
+                        Generate score,
+                        summary and recommendations.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-card">
+
+                <span class="step-number">
+                    04
+                </span>
+
+                <div>
+
+                    <h3>
+                        Sales Routing
+                    </h3>
+
+                    <p>
+
+                        Notify the correct Slack channel
+                        based on priority.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
