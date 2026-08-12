@@ -1,34 +1,172 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
+
+import "../styles/contact.css";
 ---
 
 <Layout title="Contact | MK">
 
-<Navbar />
 
-<main class="mx-auto max-w-4xl px-6 py-24">
 
-<p class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
-Contact
-</p>
+    <main class="contact-page">
 
-<h1 class="text-5xl font-bold">
-Let's Build Something.
-</h1>
+        <div class="contact-container">
 
-<div class="mt-16 space-y-6">
+            <!-- Portrait -->
 
-<p>Email</p>
+            <div class="contact-photo">
 
-<p>LinkedIn</p>
+                <img
+                    src="/headshot.png"
+                    alt="Mrityunjay Kumar"
+                />
 
-<p>GitHub</p>
+                <div class="photo-card">
+
+                    <h3>
+
+                        Mrityunjay Kumar
+
+                    </h3>
+
+                    <p>
+
+                        Full-Stack B2B SaaS Marketer
+
+                    </p>
+
+                    <span>
+
+                        Remote Worldwide
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+
+            <div class="contact-content">
+
+                <p class="section-label">
+
+                    CONTACT
+
+                </p>
+
+                <p class="contact-status">
+
+                    Available for Remote Roles • Based in Rajasthan, India
+
+                </p>
+
+                <h1>
+
+                    Let's Connect
+
+                </h1>
+
+                <p class="contact-description">
+
+                    I help B2B SaaS companies build complete marketing systems—
+                    from customer research and positioning to SEO, paid
+                    acquisition, lifecycle marketing, AI and analytics.
+
+                    Over the past nine years I've worked across nearly every
+                    major marketing discipline, giving me the ability to
+                    connect strategy, execution and technology into one
+                    repeatable growth engine.
+
+                    If you're looking for someone who can own marketing
+                    end-to-end, I'd love to connect.
+
+                </p>
+
+
+                <div class="contact-grid">
+
+                    <div class="contact-item">
+
+                        <span>Email</span>
+
+                        <a href="mailto:mrityunjayaa@gmail.com">
+
+                            mrityunjayaa@gmail.com
+
+                        </a>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <span>LinkedIn</span>
+
+                        <a
+                            href="https://www.linkedin.com/in/mjay7/"
+                            target="_blank">
+
+                            Connect on LinkedIn →
+
+                        </a>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <span>Location</span>
+
+                        <p>
+
+                            Rajasthan, India
+
+                        </p>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <span>Availability</span>
+
+                        <p>
+
+                            Remote Worldwide
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-actions">
+
+    <a
+        href="/resume.pdf"
+        download
+        class="contact-button primary">
+
+        Download Resume
+
+    </a>
+
+    <a
+        href="/labs"
+        class="contact-button secondary">
+
+        Explore Labs
+
+    </a>
 
 </div>
 
-</main>
+            </div>
+
+        </div>
+
+    </main>
+
+
 
 </Layout>
-<Footer />

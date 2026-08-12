@@ -1,0 +1,807 @@
+/* ==========================================================
+   EXPERTISE PAGE
+========================================================== */
+
+.expertise-container{
+    width:min(1200px,92%);
+    margin:0 auto;
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.expertise-hero{
+    padding:7rem 0 3rem;
+}
+
+.expertise-label{
+    display:inline-block;
+    margin-bottom:1rem;
+
+    color:#2563eb;
+
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+.expertise-hero h1{
+
+    max-width:760px;
+
+    font-size:clamp(3rem,5vw,4.8rem);
+    line-height:1.05;
+    letter-spacing:-.04em;
+}
+
+.expertise-description{
+
+    max-width:760px;
+    margin-top:2rem;
+
+    color:#64748b;
+
+    font-size:1.15rem;
+    line-height:1.9;
+}
+
+
+/* ==========================================================
+   METRICS
+========================================================== */
+
+.expertise-metrics{
+    padding:2rem 0 7rem;
+}
+
+.metric-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:1.5rem;
+
+}
+
+.metric-card{
+
+    padding:2rem;
+
+    background:#fff;
+
+    border:1px solid #e2e8f0;
+    border-radius:18px;
+
+    transition:.25s;
+
+}
+
+.metric-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(15,23,42,.08);
+
+}
+
+.metric-card h3{
+
+    margin-bottom:.5rem;
+
+    color:#2563eb;
+
+    font-size:2.2rem;
+}
+
+.metric-card span{
+
+    color:#64748b;
+
+    line-height:1.6;
+
+}
+
+
+/* ==========================================================
+   SHARED SECTION STYLES
+========================================================== */
+
+.section-header{
+
+    max-width:760px;
+
+    margin:0 auto 4rem;
+
+    text-align:center;
+
+}
+
+.section-label{
+
+    margin-bottom:1rem;
+
+    color:#2563eb;
+
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+
+}
+
+.section-header h2{
+
+    margin-bottom:1rem;
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    line-height:1.15;
+
+}
+
+.section-header p{
+
+    color:#64748b;
+
+    line-height:1.9;
+
+}
+
+
+/* ==========================================================
+   CAPABILITY MAP
+========================================================== */
+
+.capability-map{
+
+    padding:7rem 0;
+
+}
+
+.capability-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.capability-card{
+
+    padding:2rem;
+
+    background:#fff;
+
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+
+    transition:.25s;
+
+}
+
+.capability-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+
+}
+
+.capability-number{
+
+    display:inline-block;
+
+    margin-bottom:1rem;
+
+    color:#2563eb;
+
+    font-size:.8rem;
+    font-weight:700;
+    letter-spacing:.18em;
+
+}
+
+.capability-card h3{
+
+    margin-bottom:1rem;
+
+    font-size:1.4rem;
+
+}
+
+.capability-card ul{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:.85rem;
+
+    padding:0;
+    margin:0;
+
+    list-style:none;
+
+}
+
+.capability-card li{
+
+    color:#475569;
+
+}
+
+
+/* ==========================================================
+   CORE EXPERTISE
+========================================================== */
+
+.core-expertise{
+
+    padding:7rem 0;
+
+}
+
+.expertise-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.expertise-card{
+
+    padding:2rem;
+
+    background:#fff;
+
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+
+    transition:.25s;
+
+}
+
+.expertise-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(15,23,42,.08);
+
+}
+
+.expertise-card h3{
+
+    margin-bottom:1.2rem;
+
+    font-size:1.45rem;
+
+}
+
+.expertise-card ul{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:.85rem;
+
+    padding:0;
+    margin:0;
+
+    list-style:none;
+
+}
+
+.expertise-card li{
+
+    color:#475569;
+
+}
+
+
+/* ==========================================================
+   DECISION OWNERSHIP
+========================================================== */
+
+.decision-ownership{
+
+    padding:7rem 0 8rem;
+
+}
+
+.ownership-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+
+    gap:2rem;
+
+}
+
+.ownership-category{
+
+    padding:2rem;
+
+    background:#fff;
+
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+
+}
+
+.ownership-category h3{
+
+    margin-bottom:1.5rem;
+
+    font-size:1.5rem;
+
+}
+
+.ownership-category ul{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:.9rem;
+
+    margin:0;
+    padding:0;
+
+    list-style:none;
+
+}
+
+.ownership-category li{
+
+    position:relative;
+
+    padding-left:1.5rem;
+
+    color:#475569;
+
+}
+
+.ownership-category li::before{
+
+    content:"✓";
+
+    position:absolute;
+    left:0;
+
+    color:#2563eb;
+    font-weight:700;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1024px){
+
+.metric-grid,
+.capability-grid,
+.expertise-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.metric-grid,
+.capability-grid,
+.expertise-grid,
+.ownership-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.expertise-hero{
+
+padding-top:5rem;
+
+}
+
+.expertise-description{
+
+font-size:1rem;
+
+}
+
+}
+/* ==========================================================
+   TECHNOLOGY STACK
+========================================================== */
+
+.technology-stack{
+
+    padding:7rem 0;
+
+}
+
+.tech-groups{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:3rem;
+
+}
+
+.tech-group{
+
+    display:grid;
+    grid-template-columns:180px 1fr;
+
+    align-items:start;
+
+    gap:2rem;
+
+    padding-bottom:2rem;
+
+    border-bottom:1px solid #e2e8f0;
+
+}
+
+.tech-group:last-child{
+
+    border-bottom:none;
+    padding-bottom:0;
+
+}
+
+.tech-group h3{
+
+    font-size:1.25rem;
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.tech-tags{
+
+    display:flex;
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+}
+
+.tech-tags span{
+
+    display:inline-flex;
+    align-items:center;
+
+    padding:.8rem 1.2rem;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+    border-radius:999px;
+
+    color:#475569;
+
+    font-size:.95rem;
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.tech-tags span:hover{
+
+    background:#2563eb;
+    color:#fff;
+
+    border-color:#2563eb;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+.tech-group{
+
+    grid-template-columns:1fr;
+
+    gap:1rem;
+
+}
+
+.tech-tags{
+
+    gap:.75rem;
+
+}
+
+.tech-tags span{
+
+    font-size:.9rem;
+
+}
+
+}
+/* ==========================================================
+   BUILDER MINDSET
+========================================================== */
+
+.builder-mindset{
+
+    padding:7rem 0;
+
+}
+
+.builder-timeline{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding-left:3rem;
+
+}
+
+.builder-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:14px;
+    top:0;
+    bottom:0;
+
+    width:2px;
+
+    background:#dbeafe;
+
+}
+
+.builder-item{
+
+    position:relative;
+
+    padding-bottom:4rem;
+
+}
+
+.builder-item:last-child{
+
+    padding-bottom:0;
+
+}
+
+.builder-dot{
+
+    position:absolute;
+
+    left:-3rem;
+    top:.45rem;
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    border:4px solid #fff;
+
+    box-shadow:0 0 0 2px #2563eb;
+
+}
+
+.builder-content{
+
+    padding:2rem;
+
+    background:#fff;
+
+    border:1px solid #e2e8f0;
+    border-radius:20px;
+
+    transition:.25s;
+
+}
+
+.builder-content:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(15,23,42,.08);
+
+}
+
+.builder-content h3{
+
+    margin-bottom:1rem;
+
+    font-size:1.5rem;
+
+    color:#0f172a;
+
+}
+
+.builder-content p{
+
+    margin-bottom:1.5rem;
+
+    color:#64748b;
+
+    line-height:1.8;
+
+}
+
+.builder-content a{
+
+    display:inline-flex;
+    align-items:center;
+
+    gap:.4rem;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.2s;
+
+}
+
+.builder-content a:hover{
+
+    gap:.7rem;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+.builder-timeline{
+
+    padding-left:2rem;
+
+}
+
+.builder-dot{
+
+    left:-2rem;
+
+    width:14px;
+    height:14px;
+
+}
+
+.builder-content{
+
+    padding:1.5rem;
+
+}
+
+.builder-content h3{
+
+    font-size:1.3rem;
+
+}
+
+}
+/*==================================================
+CLOSING
+==================================================*/
+
+.closing-section{
+
+    padding:8rem 0;
+
+    border-top:1px solid #e5e7eb;
+
+}
+
+.closing-content{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+.closing-content h2{
+
+    margin:1rem 0 2rem;
+
+    font-size:clamp(2.2rem,4vw,3.25rem);
+
+    line-height:1.2;
+
+    letter-spacing:-.03em;
+
+}
+
+.closing-content p{
+
+    color:#64748b;
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+}
+
+.closing-links{
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+    margin-top:3rem;
+
+}
+
+.closing-links span{
+
+    color:#cbd5e1;
+
+}
+
+.closing-links a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.2s;
+
+}
+
+.closing-links a:hover{
+
+    color:#0f172a;
+
+}
+
+@media(max-width:768px){
+
+.closing-links{
+
+flex-direction:column;
+
+}
+
+.closing-links span{
+
+display:none;
+
+}
+
+}
