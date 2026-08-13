@@ -1,13 +1,460 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
+import "../styles/home.css";
+
+const expertise = [
+	"Content",
+	"SEO",
+	"Product Marketing",
+	"Paid Acquisition",
+	"Demand Generation",
+	"Lifecycle",
+	"CRM",
+	"Website",
+	"Analytics",
+];
+
+const labs = [
+	{
+		name: "ICP Agent",
+		description: "Turns company data into a clearer ideal customer profile.",
+	},
+	{
+		name: "Content Repurposer",
+		description: "Turns one strong piece of content into multiple useful assets.",
+	},
+	{
+		name: "RankFlow",
+		description: "A practical SEO workflow for finding and prioritizing opportunities.",
+	},
+	{
+		name: "Lead Intelligence",
+		description: "Connects prospect signals to a more useful picture of intent.",
+	},
+	{
+		name: "GTM OS",
+		description: "A systems-oriented approach to diagnosing and improving GTM.",
+	},
+];
+
+const writing = [
+	{
+		category: "SEO · AI SEARCH · GEO",
+		title: "Winning AI Search Starts Long Before AI",
+		description: "Why the best GEO strategy is still great SEO.",
+		href: "/writing/winning-ai-search",
+	},
+	{
+		category: "MARKETING SYSTEMS · GTM · REVENUE",
+		title: "From Click to Customer",
+		description: "A practical guide to building a B2B SaaS revenue engine.",
+		href: "/writing/from-click-to-customer",
+	},
+];
 ---
 
-<Layout>
+<Layout
+	title="Mrityunjay Kumar | Marketing · Growth · GTM"
+	description="Marketing, growth and GTM systems across strategy, acquisition, product marketing, lifecycle, CRM, SEO and analytics."
+>
+
+<main class="home-page">
+
+	<!-- =====================================================
+	     HERO
+	     ====================================================== -->
+
+	<section class="home-hero">
+
+	<div class="home-container">
+
+		<div class="home-hero-content">
+
+			<p class="home-eyebrow">
+				MRITYUNJAY KUMAR
+			</p>
+
+			<p class="home-kicker">
+				MARKETING · GROWTH · GTM SYSTEMS
+			</p>
+
+			<h1>
+				I build marketing systems
+				that turn attention into revenue.
+			</h1>
+
+			<p class="home-hero-description">
+				Strategy, acquisition, product marketing, lifecycle,
+				CRM, SEO and analytics — connected into one growth system.
+			</p>
+
+			<div class="home-hero-actions">
+
+				<a
+					href="/expertise/"
+					class="home-button home-button-primary"
+				>
+					Explore Expertise
+					<span>→</span>
+				</a>
+
+				<a
+					href="/labs/"
+					class="home-button"
+				>
+					See the Labs
+					<span>→</span>
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
 
 
-  <Hero />
+	<!-- =====================================================
+	     THE DIFFERENCE
+	     ====================================================== -->
 
-  
+	<section class="home-system">
+
+		<div class="home-container">
+
+			<div class="home-section-label">
+				<span>01</span>
+				<span>THE DIFFERENCE</span>
+			</div>
+
+
+			<div class="home-system-grid">
+
+				<div>
+					<h2>
+						Marketing works better
+						when the pieces talk to
+						each other.
+					</h2>
+				</div>
+
+
+				<div class="home-system-copy">
+
+					<p>
+						The best SEO strategy should inform content.
+						Content should sharpen positioning. Positioning
+						should improve acquisition.
+					</p>
+
+					<p>
+						Acquisition should feed the CRM. CRM data should
+						change lifecycle. Customer behavior should improve
+						the entire system.
+					</p>
+
+					<p>
+						That's the kind of marketing function I like to
+						build — one where every channel makes the others
+						more effective.
+					</p>
+
+				</div>
+
+			</div>
+
+
+			<div class="home-flow">
+
+				<span>INSIGHT</span>
+				<i>→</i>
+				<span>POSITIONING</span>
+				<i>→</i>
+				<span>ACQUISITION</span>
+				<i>→</i>
+				<span>CRM</span>
+				<i>→</i>
+				<span>LIFECYCLE</span>
+				<i>→</i>
+				<span>REVENUE</span>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!-- =====================================================
+	     EXPERTISE
+	     ====================================================== -->
+
+	<section class="home-expertise">
+
+		<div class="home-container">
+
+			<div class="home-section-label">
+				<span>02</span>
+				<span>EXPERTISE</span>
+			</div>
+
+
+			<div class="home-expertise-header">
+
+				<h2>
+					A decade across
+					the marketing stack.
+				</h2>
+
+				<a href="/expertise/" class="home-text-link">
+					Explore expertise →
+				</a>
+
+			</div>
+
+
+			<div class="home-expertise-list">
+
+				{
+					expertise.map((item, index) => (
+						<div class="home-expertise-item">
+
+							<span>
+								{String(index + 1).padStart(2, "0")}
+							</span>
+
+							<strong>
+								{item}
+							</strong>
+
+						</div>
+					))
+				}
+
+			</div>
+
+
+			<div class="home-proof">
+
+				<div>
+					<strong>9+</strong>
+					<span>years in SEO & content</span>
+				</div>
+
+				<div>
+					<strong>100+</strong>
+					<span>pages optimized</span>
+				</div>
+
+				<div>
+					<strong>50+</strong>
+					<span>case studies & whitepapers</span>
+				</div>
+
+				<div>
+					<strong>$30K</strong>
+					<span>largest monthly budget</span>
+				</div>
+
+				<div>
+					<strong>10K+</strong>
+					<span>emails per week</span>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!-- =====================================================
+	     LABS
+	     ====================================================== -->
+
+	<section class="home-labs">
+
+		<div class="home-container">
+
+			<div class="home-section-label">
+				<span>03</span>
+				<span>LABS</span>
+			</div>
+
+
+			<div class="home-labs-header">
+
+				<div>
+					<h2>
+						I don't just use
+						the tools.
+						<br />
+						I build them.
+					</h2>
+				</div>
+
+				<p>
+					Small experiments and working systems that turn
+					marketing problems into something I can test,
+					measure and improve.
+				</p>
+
+			</div>
+
+
+			<div class="home-labs-list">
+
+				{
+					labs.map((lab, index) => (
+						<a href="/labs/" class="home-lab-item">
+
+							<span class="home-lab-number">
+								{String(index + 1).padStart(2, "0")}
+							</span>
+
+							<div class="home-lab-main">
+
+								<h3>
+									{lab.name}
+								</h3>
+
+								<p>
+									{lab.description}
+								</p>
+
+							</div>
+
+							<span class="home-lab-arrow">
+								↗
+							</span>
+
+						</a>
+					))
+				}
+
+			</div>
+
+
+			<div class="home-labs-cta">
+
+				<a
+					href="/labs/"
+					class="home-button home-button-primary"
+				>
+					Explore the Labs
+					<span>→</span>
+				</a>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!-- =====================================================
+	     WRITING
+	     ====================================================== -->
+
+	<section class="home-writing">
+
+		<div class="home-container">
+
+			<div class="home-section-label">
+				<span>04</span>
+				<span>WRITING</span>
+			</div>
+
+
+			<div class="home-writing-header">
+
+				<h2>
+					Thinking about
+					marketing.
+				</h2>
+
+				<a href="/writing/" class="home-text-link">
+					Read the writing →
+				</a>
+
+			</div>
+
+
+			<div class="home-writing-list">
+
+				{
+					writing.map((article, index) => (
+						<a
+							href={article.href}
+							class="home-writing-item"
+						>
+
+							<div class="home-writing-number">
+								{String(index + 1).padStart(2, "0")}
+							</div>
+
+							<div>
+
+								<p class="home-writing-category">
+									{article.category}
+								</p>
+
+								<h3>
+									{article.title}
+								</h3>
+
+								<p class="home-writing-description">
+									{article.description}
+								</p>
+
+							</div>
+
+							<span class="home-writing-arrow">
+								→
+							</span>
+
+						</a>
+					))
+				}
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!-- =====================================================
+	     FINAL CTA
+	     ====================================================== -->
+
+	<section class="home-final">
+
+		<div class="home-container">
+
+			<p class="home-final-label">
+				LET'S BUILD SOMETHING
+			</p>
+
+			<h2>
+				If you're building
+				something worth growing,
+				let's talk.
+			</h2>
+
+			<a
+				href="/contact/"
+				class="home-final-button"
+			>
+				Work with me
+				<span>→</span>
+			</a>
+
+		</div>
+
+	</section>
+
+</main>
 
 </Layout>

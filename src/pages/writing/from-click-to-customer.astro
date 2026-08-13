@@ -1,0 +1,953 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/writing-article.css";
+---
+
+<Layout
+	title="From Click to Customer | Mrityunjay Kumar"
+	description="A practical guide to building a B2B SaaS revenue engine."
+>
+
+<main class="article-page">
+
+	<article class="article">
+
+		<header class="article-header">
+
+			<a href="/writing/" class="article-back">
+				← Writing
+			</a>
+
+			<p class="article-series">
+				FIELD NOTE / 02
+			</p>
+
+			<p class="article-label">
+				MARKETING SYSTEMS · GTM · REVENUE
+			</p>
+
+			<h1>
+				From Click to Customer
+			</h1>
+
+			<p class="article-deck">
+				A practical guide to building a B2B SaaS revenue engine.
+			</p>
+
+			<div class="article-meta">
+				<span>MRITYUNJAY KUMAR</span>
+				<span>MARKETING · GROWTH · GTM SYSTEMS</span>
+				<span>~15 MIN READ</span>
+			</div>
+
+		</header>
+
+
+		<div class="article-body">
+
+			<!-- INTRO -->
+
+			<p>
+				For a long time, I thought I was pretty good at reading marketing
+				dashboards. I could tell you which Google Ads campaign had the
+				lowest cost per lead, which landing page converted best, which
+				keywords were gaining traction in organic search, even which email
+				subject line generated the highest open rate.
+			</p>
+
+			<p>
+				Every Monday morning there was another graph pointing upward,
+				another metric suggesting things were moving in the right
+				direction.
+			</p>
+
+			<p>
+				Then, during a quarterly pipeline review, the Head of Sales said
+				something that completely changed the way I looked at marketing.
+			</p>
+
+			<p>
+				He wasn't criticizing the campaigns or questioning the numbers.
+				He simply asked:
+			</p>
+
+			<p class="article-callout">
+				"Which of these leads are actually becoming customers?"
+			</p>
+
+			<p>
+				It was one of those deceptively simple questions that immediately
+				exposes the difference between measuring activity and measuring
+				outcomes.
+			</p>
+
+			<p>
+				We had built a sophisticated system for tracking how people entered
+				the funnel. We knew surprisingly little about what happened after
+				they got there.
+			</p>
+
+			<p>
+				Looking back, the problem wasn't that our reporting was wrong.
+				Every dashboard was technically accurate. Google Ads showed
+				conversions. GA4 showed engaged sessions. HubSpot told us how many
+				MQLs we'd generated. Salesforce had a healthy-looking pipeline.
+			</p>
+
+			<p>
+				The trouble was that each platform was answering a different
+				question, and almost nobody was looking at all of them together.
+			</p>
+
+			<p>
+				Marketing celebrated lower acquisition costs because that's what
+				the marketing dashboard measured. Sales celebrated closed
+				opportunities because that's what the CRM measured.
+			</p>
+
+			<p>
+				Everyone was acting rationally within the boundaries of their own
+				dashboard, yet the business still struggled to answer a question
+				that should have been embarrassingly simple:
+			</p>
+
+			<p class="article-callout">
+				Which parts of our marketing are actually creating customers,
+				and which parts are merely creating activity?
+			</p>
+
+
+			<!-- SECTION 01 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>01</span>
+					<span>START WITH REVENUE</span>
+				</div>
+
+				<h2>
+					Start With Revenue, Not Traffic
+				</h2>
+
+				<p>
+					That question fundamentally changed the way I approach every
+					marketing engagement.
+				</p>
+
+				<p>
+					Today, one of the first questions I ask a founder isn't,
+					"What's your ad budget?" or "How much organic traffic are you
+					getting?"
+				</p>
+
+				<p>
+					It's much simpler than that.
+				</p>
+
+				<p class="article-callout">
+					"Can you show me how someone becomes a customer?"
+				</p>
+
+				<p>
+					I don't mean the idealized journey from the sales deck. I mean
+					the real one. Where does the first touch usually happen? How
+					long does it take before someone speaks to Sales? Which pages do
+					prospects repeatedly visit before requesting a demo? How many
+					opportunities stall after technical validation? Where do
+					customers disappear?
+				</p>
+
+				<p>
+					Every company has answers to those questions, but they're rarely
+					documented in one place.
+				</p>
+
+				<p>
+					They're scattered across Google Ads, Search Console, GA4,
+					HubSpot, Salesforce, Gong recordings, Slack messages, and the
+					accumulated intuition of people who've been with the company
+					for years.
+				</p>
+
+				<p>
+					Before I think about improving a campaign, I want to understand
+					how all of those pieces fit together.
+				</p>
+
+				<p>
+					Because once you see marketing as a system instead of a
+					collection of channels, your priorities change almost overnight.
+				</p>
+
+				<p>
+					Marketing begins by asking how to generate more traffic. Which
+					channels should we invest in? Which keywords should we rank
+					for? How much should we spend on Google Ads?
+				</p>
+
+				<p>
+					Founders rarely think that way. They start with a revenue
+					target. They know the business needs another five million
+					dollars in ARR next year, or another hundred enterprise
+					customers, and they work backwards from there.
+				</p>
+
+				<p>
+					That's one of the reasons I've stopped planning campaigns in
+					terms of clicks, impressions or even leads. I start with the
+					number the board cares about and force every marketing decision
+					to justify itself against it.
+				</p>
+
+			</section>
+
+
+			<!-- REVENUE MODEL -->
+
+			<div class="article-model">
+
+				<div>
+					<strong>$2.5M</strong>
+					<span>additional ARR</span>
+				</div>
+
+				<div>→</div>
+
+				<div>
+					<strong>100</strong>
+					<span>new customers</span>
+				</div>
+
+				<div>→</div>
+
+				<div>
+					<strong>500</strong>
+					<span>qualified opportunities</span>
+				</div>
+
+				<div>→</div>
+
+				<div>
+					<strong>1,000</strong>
+					<span>MQLs</span>
+				</div>
+
+			</div>
+
+
+			<p>
+				Let's make this concrete. Suppose a SaaS company tells me they
+				need another $2.5 million in Annual Recurring Revenue over the next
+				twelve months.
+			</p>
+
+			<p>
+				My first instinct isn't to ask how much we should spend on Google
+				Ads. It's to start building a model.
+			</p>
+
+			<p>
+				If the average contract value is $25,000, we need one hundred new
+				customers. If Sales closes one out of every five qualified
+				opportunities, Marketing doesn't need one hundred leads — it needs
+				five hundred genuine sales opportunities.
+			</p>
+
+			<p>
+				If only half of Marketing Qualified Leads ever become Sales
+				Qualified Leads, we're now aiming for roughly a thousand MQLs.
+			</p>
+
+			<p>
+				If the website converts 2.5% of qualified visitors into MQLs,
+				suddenly the conversation changes again. We don't need "more
+				traffic." We need approximately forty thousand visitors who
+				actually resemble our ideal customer profile.
+			</p>
+
+			<p>
+				Every assumption in that model can be challenged — and it should
+				be — but once the numbers are on the table, every marketing
+				decision has context.
+			</p>
+
+
+			<!-- SECTION 02 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>02</span>
+					<span>ACQUISITION</span>
+				</div>
+
+				<h2>
+					Acquisition Is an Amplifier
+				</h2>
+
+				<p>
+					The value of building a model like this isn't that the numbers
+					will be perfectly accurate. They won't. Close rates fluctuate,
+					average contract values change, markets slow down.
+				</p>
+
+				<p>
+					What the model gives you is something much more useful:
+					leverage. It tells you which assumptions matter enough to
+					deserve your attention.
+				</p>
+
+				<p>
+					One consequence of planning from revenue backwards is that I've
+					become remarkably slow to launch advertising campaigns.
+				</p>
+
+				<p>
+					It's not procrastination. It's because I've learned that Google
+					Ads is an amplifier. It doesn't fix positioning, weak messaging
+					or an unclear offer. It simply helps more people encounter them.
+				</p>
+
+				<p>
+					If the business hasn't yet developed a crisp answer to "Why
+					should someone choose us instead of the other five vendors
+					they're evaluating?" then spending another twenty thousand
+					dollars on paid acquisition usually accelerates the wrong
+					outcome.
+				</p>
+
+				<p>
+					Only after I've built that context do I log into Google Ads.
+				</p>
+
+				<p>
+					More often than not, I head straight to the Search Terms report.
+					I've always thought it was one of the most underappreciated
+					customer research tools in marketing.
+				</p>
+
+				<p>
+					Campaign settings tell me what we hoped people would search.
+					Search terms tell me what they actually searched.
+				</p>
+
+			</section>
+
+
+			<!-- SECTION 03 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>03</span>
+					<span>LANDING PAGES</span>
+				</div>
+
+				<h2>
+					The Click Isn't the Hard Part
+				</h2>
+
+				<p>
+					One mistake I see repeated across B2B SaaS is treating the
+					click as the hard part.
+				</p>
+
+				<p>
+					It isn't.
+				</p>
+
+				<p>
+					By the time someone arrives on your landing page, several
+					things have already gone right. Google decided your ad was
+					relevant enough to show. The prospect found the headline
+					compelling enough to click. You now have their attention.
+				</p>
+
+				<p>
+					The landing page has a much simpler job than marketers often
+					imagine. It doesn't need to sell an enterprise software in
+					sixty seconds. It just needs to answer the next question in the
+					buyer's mind and they'll keep moving.
+				</p>
+
+				<p class="article-callout">
+					What friction is this reducing?
+				</p>
+
+				<p>
+					If the visitor is wondering whether the software integrates with
+					SAP, the page should answer that. If they're worried about
+					implementation time, show them the implementation process. If
+					security is likely to become a procurement blocker, don't hide
+					your compliance information behind a sales call.
+				</p>
+
+				<p>
+					Every unanswered question increases friction and in enterprise
+					software, uncertainty is usually a stronger force than
+					excitement.
+				</p>
+
+				<p>
+					When a landing page underperforms, I rarely begin by changing
+					the copy. I begin by watching people use it.
+				</p>
+
+				<p>
+					Microsoft Clarity, Hotjar or FullStory have become some of my
+					favorite marketing tools because they expose something
+					analytics platforms never will: hesitation.
+				</p>
+
+				<p>
+					A conversion rate tells you what happened. A session recording
+					often tells you why.
+				</p>
+
+			</section>
+
+
+			<!-- SECTION 04 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>04</span>
+					<span>CRM</span>
+				</div>
+
+				<h2>
+					The CRM Isn't a Database. It's the Marketing Engine.
+				</h2>
+
+				<p>
+					One habit I've never understood is the way companies treat the
+					CRM as the place where marketing ends and sales begins.
+				</p>
+
+				<p>
+					In practice, the opposite is usually true. The CRM is where
+					marketing finally becomes measurable.
+				</p>
+
+				<p>
+					Until someone exists as a record tied to an opportunity, most
+					of what we're looking at are proxies — clicks, sessions,
+					conversions, cost per lead, engagement rates.
+				</p>
+
+				<p>
+					Useful proxies, certainly, but still proxies.
+				</p>
+
+				<p>
+					The moment a prospect enters the CRM, the conversation changes.
+				</p>
+
+				<p>
+					Now we can ask questions that matter to the business. Which
+					campaigns consistently produce opportunities rather than just
+					leads? Which industries move through the pipeline fastest? Do
+					manufacturing companies convert at twice the rate of
+					distributors?
+				</p>
+
+				<p>
+					Those aren't advertising questions or SEO questions anymore.
+					They're business questions, and the CRM is one of the few
+					places where marketing finally has enough context to answer
+					them.
+				</p>
+
+			</section>
+
+
+			<!-- SECTION 05 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>05</span>
+					<span>BEHAVIOR</span>
+				</div>
+
+				<h2>
+					Intent Leaves a Trail
+				</h2>
+
+				<p>
+					One place where this disconnect shows up repeatedly is lead
+					scoring.
+				</p>
+
+				<p>
+					On paper, most lead scoring models look perfectly sensible. A
+					Director gets ten points. A VP gets fifteen. Someone from a
+					target account receives another twenty. Download a whitepaper,
+					add five more. Visit the pricing page, add another ten.
+				</p>
+
+				<p>
+					Eventually the total crosses an arbitrary threshold and the
+					lead is handed to Sales.
+				</p>
+
+				<p>
+					I've implemented systems like this myself, and they certainly
+					create order where none existed before.
+				</p>
+
+				<p>
+					But over time I found myself trusting the score less and the
+					behaviour more.
+				</p>
+
+				<p>
+					A Procurement Director downloading an industry report is not
+					the same buyer as an Operations Manager who has visited the
+					pricing page three times, read the implementation guide,
+					compared two competitors, forwarded the security documentation
+					to IT, and returned a week later with colleagues from the same
+					company.
+				</p>
+
+				<p>
+					Traditional lead scoring often concludes that the first person
+					is more qualified because their title is more impressive. In
+					reality, I'd happily bet on the second becoming a customer.
+				</p>
+
+				<p>
+					Intent leaves a trail, and I've found that trail is usually more
+					predictive than demographics alone.
+				</p>
+
+			</section>
+
+
+			<!-- BEHAVIORAL CRM GRAPHIC -->
+
+			<figure class="article-figure article-figure-wide">
+
+				<img
+					src="/images/writing/behavioral-crm.png"
+					alt="Behavioral CRM showing how buyer actions reveal intent throughout the customer journey"
+					loading="lazy"
+				/>
+
+				<figcaption>
+					Behavior is often a better indicator of buying intent than a
+					static lead score.
+				</figcaption>
+
+			</figure>
+
+
+			<!-- SECTION 06 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>06</span>
+					<span>LIFECYCLE</span>
+				</div>
+
+				<h2>
+					From Time-Based to Behavior-Based Lifecycle
+				</h2>
+
+				<p>
+					Most modern CRMs capture enough of this behavior to make it
+					actionable, yet many companies reduce it to a single engagement
+					score.
+				</p>
+
+				<p>
+					I prefer to think in sequences rather than events.
+				</p>
+
+				<p>
+					One visit to a migration guide might not matter. But when it
+					follows three product-page visits, a comparison article, and a
+					pricing page within the same week, it's often a signal that the
+					buying conversation has moved from curiosity to evaluation.
+				</p>
+
+				<p>
+					That's the moment I want Sales to know about — not because the
+					lead crossed an arbitrary score of seventy-five, but because
+					their behavior suggests they're trying to answer implementation
+					questions before making a decision.
+				</p>
+
+				<p>
+					The same idea completely changed the way I thought about
+					marketing automation.
+				</p>
+
+				<p>
+					Early in my career, most nurture sequences I built were based
+					on time. Wait two days, send an email. Wait another five, send
+					a case study. If they haven't responded after two weeks, invite
+					them to a webinar.
+				</p>
+
+				<p>
+					There's nothing inherently wrong with that approach, and for
+					low-consideration products it often works well enough.
+				</p>
+
+				<p>
+					Enterprise software is different. Buying decisions don't move
+					because three days have passed.
+				</p>
+
+				<p>
+					They move because someone inside the buying committee learned
+					something, solved an objection, involved another stakeholder or
+					reached the next stage of internal evaluation.
+				</p>
+
+				<p class="article-callout">
+					The trigger isn't the calendar. The trigger is evidence that
+					the customer's thinking has changed.
+				</p>
+
+				<p>
+					I'd rather send an implementation guide because someone spent
+					ten minutes reading integration documentation than because it's
+					"Day 7" of a nurture sequence.
+				</p>
+
+				<p>
+					I'd rather notify Sales that a prospect has revisited pricing
+					after sharing the security documentation internally than
+					because their lead score crossed eighty points overnight.
+				</p>
+
+			</section>
+
+
+			<!-- SECTION 07 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>07</span>
+					<span>MEASUREMENT</span>
+				</div>
+
+				<h2>
+					Why Most Marketing Dashboards Lie
+				</h2>
+
+				<p>
+					Every marketing dashboard tells the truth. It just doesn't
+					tell the whole truth.
+				</p>
+
+				<p>
+					Google Ads reports clicks, conversions and cost per acquisition
+					because those are the outcomes Google can observe. GA4 reports
+					sessions, engagement and events because that's the world it
+					lives in. HubSpot focuses on contacts and lifecycle stages.
+					Salesforce cares about opportunities, pipeline and revenue.
+				</p>
+
+				<p>
+					None of those systems are wrong.
+				</p>
+
+				<p>
+					The problem begins when we mistake a local truth for the whole
+					story.
+				</p>
+
+				<p>
+					I've been in situations where I reported that cost per lead had
+					fallen by thirty percent while Sales quietly mentioned that
+					close rates had also gone down.
+				</p>
+
+				<p>
+					Both teams were telling the truth. Neither team was describing
+					what was actually happening to the business.
+				</p>
+
+				<p>
+					The dashboard wasn't lying; it was simply answering a narrower
+					question than the one the company really needed answered.
+				</p>
+
+			</section>
+
+
+			<!-- SECTION 08 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>08</span>
+					<span>ATTRIBUTION</span>
+				</div>
+
+				<h2>
+					Attribution Is Broken. Here's What I Trust Instead.
+				</h2>
+
+				<p>
+					If there's one area of marketing that has made me more humble
+					over the years, it's attribution.
+				</p>
+
+				<p>
+					Early in my career I thought the challenge was choosing the
+					right attribution model. First touch, last touch, linear, time
+					decay — every platform had a slightly different philosophy,
+					and every consultant seemed convinced theirs was the most
+					accurate.
+				</p>
+
+				<p>
+					I don't think that anymore.
+				</p>
+
+				<p>
+					After watching enough buying journeys unfold, I've come to
+					believe that attribution isn't a reporting problem so much as
+					an observation problem.
+				</p>
+
+				<p>
+					Modern B2B purchases simply don't happen in a straight line.
+				</p>
+
+				<p>
+					A prospect might discover you through a Google search, ignore
+					you for three months, hear your CEO on a podcast, see a LinkedIn
+					post shared by a colleague, read two comparison articles, ask
+					ChatGPT for alternatives, click a retargeting ad, attend a
+					webinar, and finally request a demo after searching for your
+					brand directly.
+				</p>
+
+				<p>
+					Every platform involved in that journey will happily claim some
+					portion of the credit. None of them can honestly claim to have
+					witnessed the entire story.
+				</p>
+
+				<p>
+					Because of that, I've gradually become less interested in
+					finding the perfect attribution model and more interested in
+					collecting multiple pieces of imperfect evidence.
+				</p>
+
+				<p>
+					I'll certainly look at assisted conversions in GA4 and campaign
+					influence reports in HubSpot or Salesforce, but I rarely make
+					important decisions based on those reports alone.
+				</p>
+
+				<p>
+					I want to know which pages repeatedly appear in closed-won
+					opportunities, not just which pages generated the first visit.
+				</p>
+
+				<p>
+					I'll ask Sales what competitors keep coming up in discovery
+					calls, because changing competitive dynamics often explain
+					performance swings long before dashboards do.
+				</p>
+
+				<p>
+					I pay attention to branded search volume because it tells me
+					whether more people are actively looking for us rather than
+					simply discovering us by accident.
+				</p>
+
+				<p>
+					I read CRM timelines to understand the order in which prospects
+					consumed information. Sometimes I'll even go back to call
+					recordings simply to hear a customer answer the deceptively
+					simple question, "How did you first hear about us?"
+				</p>
+
+				<p>
+					None of those signals is complete on its own, and they
+					occasionally contradict each other.
+				</p>
+
+				<p>
+					That's precisely the point.
+				</p>
+
+				<p>
+					Attribution becomes much more reliable when you stop treating
+					it like a mathematical equation and start treating it like an
+					investigation.
+				</p>
+
+				<p>
+					You're assembling evidence until a pattern becomes difficult
+					to ignore.
+				</p>
+
+				<p>
+					Ultimately, the reason I care about attribution has very little
+					to do with reporting. I care because every quarter the business
+					has to decide where the next dollar should go.
+				</p>
+
+				<p>
+					Should we hire another content marketer or another account
+					executive? Increase Google Ads by twenty percent or invest in
+					product marketing? Sponsor an industry conference or build a
+					comparison page that Sales has been asking for all year?
+				</p>
+
+				<p>
+					Attribution isn't there to satisfy my curiosity about what
+					happened in the past; it's there to improve the next decision.
+				</p>
+
+			</section>
+
+
+			<!-- SECTION 09 -->
+
+			<section class="article-section">
+
+				<div class="section-marker">
+					<span>09</span>
+					<span>THE SYSTEM</span>
+				</div>
+
+				<h2>
+					Marketing Is a System, Not a Collection of Channels
+				</h2>
+
+				<p>
+					When I look back at the companies where marketing worked
+					exceptionally well, I don't remember them because they had
+					brilliant Google Ads campaigns or because their SEO strategy
+					was ahead of everyone else's.
+				</p>
+
+				<p>
+					I remember them because every part of the customer journey
+					reinforced the next.
+				</p>
+
+				<p>
+					Search wasn't competing with paid media; it was introducing
+					future buyers to the category.
+				</p>
+
+				<p>
+					Paid search wasn't replacing organic traffic; it was capturing
+					demand that already existed.
+				</p>
+
+				<p>
+					Product marketing gave Sales better stories to tell.
+				</p>
+
+				<p>
+					Customer Success uncovered objections that became landing
+					pages.
+				</p>
+
+				<p>
+					Nothing operated in isolation for very long.
+				</p>
+
+				<p>
+					The channels weren't successful because each one had been
+					optimized independently.
+				</p>
+
+				<p>
+					They became successful because information flowed freely between
+					them.
+				</p>
+
+				<p>
+					That's probably why I've become uncomfortable with job
+					descriptions that divide marketing into neat categories.
+				</p>
+
+				<p>
+					SEO. PPC. Product Marketing. Lifecycle. Demand Generation.
+					Marketing Operations.
+				</p>
+
+				<p>
+					Those specialties absolutely exist, and in larger organizations
+					they should.
+				</p>
+
+				<p>
+					But the customer never experiences them separately.
+				</p>
+
+				<p>
+					They don't know or care that the comparison page was written by
+					Product Marketing, the Google Ad was managed by the performance
+					team, the onboarding email came from Lifecycle, and the
+					implementation guide was published by Customer Success.
+				</p>
+
+				<p class="article-callout article-callout-final">
+					The customer experiences one company.
+				</p>
+
+				<p>
+					That's the system I'm interested in building.
+				</p>
+
+			</section>
+
+		</div>
+
+
+		<footer class="article-end">
+
+			<div class="article-end-copy">
+
+				<span>
+					MORE FROM MK
+				</span>
+
+				<p>
+					More thinking on marketing systems, growth and GTM.
+				</p>
+
+			</div>
+
+			<div class="article-actions">
+
+				<a
+					href="/writing/"
+					class="article-button"
+				>
+					← More Writing
+				</a>
+
+				<a
+					href="/contact/"
+					class="article-button article-button-primary"
+				>
+					Let's Work Together →
+				</a>
+
+			</div>
+
+		</footer>
+
+	</article>
+
+</main>
+
+</Layout>

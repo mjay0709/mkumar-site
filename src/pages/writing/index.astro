@@ -1,0 +1,147 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../styles/writing.css";
+
+const articles = [
+	{
+		number: "01",
+		category: "SEO · AI SEARCH · GEO",
+		title: "Winning AI Search Starts Long Before AI",
+		description: "Why the best GEO strategy is still great SEO.",
+		readTime: "10 min read",
+		href: "/writing/winning-ai-search",
+		image: "/images/writing/winning-ai-search.png",
+	},
+
+	{
+		number: "02",
+		category: "MARKETING SYSTEMS · GTM · REVENUE",
+		title: "From Click to Customer",
+		description: "A practical guide to building a B2B SaaS revenue engine.",
+		readTime: "15 min read",
+		href: "/writing/from-click-to-customer",
+		image: "/images/writing/behavioral-crm.png",
+	},
+];
+---
+
+<Layout
+	title="Writing | Mrityunjay Kumar"
+	description="Field notes on marketing, growth, SEO, GTM systems and revenue."
+>
+
+<main class="writing-page">
+
+	<section class="writing-hero">
+
+		<div class="writing-hero-inner">
+
+			<p class="writing-eyebrow">
+				PERSPECTIVES / FIELD NOTES
+			</p>
+
+			<h1>
+				Thinking about<br />
+				marketing.
+			</h1>
+
+			<p class="writing-intro">
+				Occasional long-form writing on growth, marketing systems,
+				SEO, GTM and the mechanics behind how companies grow.
+			</p>
+
+			<div class="writing-author">
+				<span>MRITYUNJAY KUMAR</span>
+				<span>MARKETING · GROWTH · GTM SYSTEMS</span>
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<section class="writing-list">
+
+		<div class="writing-list-header">
+			<span>SELECTED WRITING</span>
+			<span>{articles.length.toString().padStart(2, "0")} PIECES</span>
+		</div>
+
+
+		<div class="writing-articles">
+
+			{
+				articles.map((article) => (
+					<a
+						href={article.href}
+						class="writing-card"
+					>
+
+						<div class="writing-card-number">
+							{article.number}
+						</div>
+
+
+						<div class="writing-card-content">
+
+							<div class="writing-card-category">
+								{article.category}
+							</div>
+
+							<h2>
+								{article.title}
+							</h2>
+
+							<p>
+								{article.description}
+							</p>
+
+							<div class="writing-card-meta">
+								<span>{article.readTime}</span>
+								<span>Read piece →</span>
+							</div>
+
+						</div>
+
+
+						<div class="writing-card-image">
+
+							<img
+								src={article.image}
+								alt=""
+								loading="lazy"
+							/>
+
+						</div>
+
+					</a>
+				))
+			}
+
+		</div>
+
+	</section>
+
+
+	<section class="writing-footer">
+
+		<p class="writing-footer-label">
+			MORE TO COME
+		</p>
+
+		<h2>
+			One considered piece<br />
+			at a time.
+		</h2>
+
+		<p>
+			I don't publish to fill a content calendar.
+			When there's something worth thinking through,
+			I write about it.
+		</p>
+
+	</section>
+
+</main>
+
+</Layout>
