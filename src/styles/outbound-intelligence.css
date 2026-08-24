@@ -1,0 +1,1293 @@
+/* =========================================================
+   LEAD INTELLIGENCE AUTOMATION
+   Light Portfolio Theme
+========================================================= */
+
+.oe-page {
+	--li-bg: #ffffff;
+	--li-surface: #f8fafc;
+	--li-surface-2: #f1f5f9;
+	--li-border: #e2e8f0;
+	--li-border-strong: #cbd5e1;
+
+	--li-text: #0f172a;
+	--li-text-secondary: #334155;
+	--li-muted: #64748b;
+	--li-subtle: #94a3b8;
+
+	--li-primary: #2563eb;
+	--li-primary-light: #4f7cff;
+
+	background: var(--li-bg);
+	color: var(--li-text);
+
+	font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+		"Segoe UI", sans-serif;
+
+	line-height: 1.6;
+	min-height: 100vh;
+}
+
+
+/* =========================================================
+   RESET — SCOPED TO LEAD PAGE
+========================================================= */
+
+.oe-page *,
+.oe-page *::before,
+.oe-page *::after {
+	box-sizing: border-box;
+}
+
+.oe-page img {
+	display: block;
+	max-width: 100%;
+}
+
+.oe-page h1,
+.oe-page h2,
+.oe-page h3,
+.oe-page h4,
+.oe-page h5,
+.oe-page h6,
+.oe-page p,
+.oe-page ul {
+	margin-top: 0;
+}
+
+.oe-page h1,
+.oe-page h2,
+.oe-page h3,
+.oe-page h4,
+.oe-page h5,
+.oe-page h6 {
+	color: var(--li-text);
+}
+
+.oe-page p {
+	color: var(--li-muted);
+}
+
+
+/* =========================================================
+   GENERIC SECTION
+========================================================= */
+
+.oe-page section {
+	width: min(1280px, 92%);
+	margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.oe-page .li-hero {
+	min-height: 88vh;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 72px;
+	align-items: center;
+
+	padding: 80px 0;
+}
+
+.oe-page .li-hero-left {
+	max-width: 620px;
+}
+
+.oe-page .eyebrow {
+	margin-bottom: 20px;
+
+	color: var(--li-primary);
+
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.oe-page .li-hero h1 {
+	margin-bottom: 28px;
+
+	color: var(--li-text);
+
+	font-size: clamp(3.5rem, 5vw, 5rem);
+	font-weight: 700;
+	line-height: 0.95;
+	letter-spacing: -0.055em;
+}
+
+.oe-page .li-hero h1 span {
+	display: block;
+	color: var(--li-primary);
+}
+
+.oe-page .li-hero-text {
+	margin-bottom: 36px;
+
+	color: var(--li-muted);
+
+	font-size: 1.15rem;
+	line-height: 1.8;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.oe-page .li-hero-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+
+	margin-bottom: 36px;
+}
+
+.oe-page .primary,
+.oe-page .secondary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 13px 22px;
+
+	border-radius: 8px;
+
+	font-size: 0.85rem;
+	font-weight: 650;
+	text-decoration: none;
+
+	transition:
+		transform 0.2s ease,
+		background 0.2s ease,
+		border-color 0.2s ease;
+}
+
+.oe-page .primary {
+	background: var(--li-primary);
+	color: #ffffff;
+
+	box-shadow: 0 10px 25px rgba(37, 99, 235, 0.16);
+}
+
+.oe-page .primary:hover {
+	background: #1d4ed8;
+	transform: translateY(-2px);
+}
+
+.oe-page .secondary {
+	border: 1px solid var(--li-border-strong);
+
+	background: #ffffff;
+	color: var(--li-text);
+}
+
+.oe-page .secondary:hover {
+	border-color: #94a3b8;
+	background: var(--li-surface);
+
+	transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   TECH STACK PILLS
+========================================================= */
+
+.oe-page .li-stack {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.oe-page .li-stack span {
+	padding: 7px 13px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 999px;
+
+	background: var(--li-surface);
+
+	color: var(--li-text-secondary);
+
+	font-size: 0.78rem;
+}
+
+
+/* =========================================================
+   BROWSER MOCKUP
+========================================================= */
+
+.oe-page .li-hero-right {
+	display: flex;
+	justify-content: center;
+}
+
+.oe-page .li-browser {
+	width: 100%;
+	overflow: hidden;
+
+	border: 1px solid var(--li-border);
+	border-radius: 18px;
+
+	background: #ffffff;
+
+	box-shadow:
+		0 30px 70px rgba(15, 23, 42, 0.10);
+
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.oe-page .li-browser:hover {
+	transform: translateY(-5px);
+
+	box-shadow:
+		0 40px 80px rgba(15, 23, 42, 0.14);
+}
+
+.oe-page .li-browser-top {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	padding: 13px 16px;
+
+	background: #f8fafc;
+	border-bottom: 1px solid var(--li-border);
+}
+
+.oe-page .li-browser-top p {
+	margin: 0 0 0 12px;
+
+	color: #64748b;
+
+	font-size: 0.8rem;
+}
+
+.oe-page .red,
+.oe-page .yellow,
+.oe-page .green {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.oe-page .red {
+	background: #ff5f57;
+}
+
+.oe-page .yellow {
+	background: #febc2e;
+}
+
+.oe-page .green {
+	background: #28c840;
+}
+
+.oe-page .li-workflow-image {
+	width: 100%;
+	height: auto;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.oe-page .stats {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 18px;
+
+	margin: 20px auto 90px;
+}
+
+.oe-page .stat {
+	padding: 32px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 18px;
+
+	background: #ffffff;
+
+	box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+
+	transition:
+		transform 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+.oe-page .stat:hover {
+	transform: translateY(-5px);
+
+	box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.oe-page .stat h2 {
+	margin-bottom: 8px;
+
+	color: var(--li-primary);
+
+	font-size: 2.5rem;
+	font-weight: 650;
+	line-height: 1;
+}
+
+.oe-page .stat p {
+	margin: 0;
+
+	color: var(--li-muted);
+
+	font-size: 0.9rem;
+	line-height: 1.6;
+}
+
+
+/* =========================================================
+   PROBLEM / SOLUTION
+========================================================= */
+
+.oe-page .problem {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+
+	padding-bottom: 100px;
+}
+
+.oe-page .card {
+	padding: 48px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 22px;
+
+	background: var(--li-surface);
+
+	box-shadow: 0 8px 30px rgba(15, 23, 42, 0.035);
+}
+
+.oe-page .card h3 {
+	margin-bottom: 24px;
+
+	color: var(--li-text);
+
+	font-size: clamp(2rem, 3vw, 2.8rem);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.045em;
+}
+
+.oe-page .card p {
+	margin-bottom: 28px;
+
+	color: var(--li-muted);
+
+	line-height: 1.8;
+}
+
+.oe-page .card ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.oe-page .card li {
+	position: relative;
+
+	margin: 15px 0;
+	padding-left: 22px;
+
+	color: var(--li-text-secondary);
+}
+
+.oe-page .card li::before {
+	content: "•";
+
+	position: absolute;
+	left: 0;
+
+	color: var(--li-primary);
+}
+
+
+/* =========================================================
+   ARCHITECTURE
+========================================================= */
+
+.oe-page .architecture {
+	padding: 120px 0;
+}
+
+.oe-page .architecture-header {
+	max-width: 760px;
+	margin: 0 auto 60px;
+
+	text-align: center;
+}
+
+.oe-page .architecture-header h2 {
+	margin: 16px 0;
+
+	color: var(--li-text);
+
+	font-size: clamp(2.5rem, 4vw, 3.5rem);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.05em;
+}
+
+.oe-page .architecture-header p {
+	margin: 0;
+
+	color: var(--li-muted);
+
+	font-size: 1.05rem;
+	line-height: 1.8;
+}
+
+.oe-page .architecture-container {
+	display: grid;
+	grid-template-columns: 1.35fr 0.65fr;
+	gap: 40px;
+	align-items: start;
+}
+
+
+/* =========================================================
+   ARCHITECTURE CANVAS
+========================================================= */
+
+.oe-page .architecture-canvas {
+	position: relative;
+	overflow: hidden;
+
+	min-height: 700px;
+	padding: 40px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 24px;
+
+	background: #f8fafc;
+}
+
+
+/* =========================================================
+   ARCHITECTURE SIDEBAR
+========================================================= */
+
+.oe-page .architecture-sidebar {
+	position: sticky;
+	top: 100px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.oe-page .sidebar-card {
+	display: flex;
+	gap: 16px;
+
+	padding: 20px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 16px;
+
+	background: #ffffff;
+
+	transition:
+		transform 0.25s ease,
+		border-color 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+.oe-page .sidebar-card:hover {
+	transform: translateX(5px);
+
+	border-color: #9db7ff;
+
+	box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.oe-page .sidebar-card.active {
+	border-color: var(--li-primary);
+	background: #f8faff;
+}
+
+.oe-page .step-number {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 44px;
+	height: 44px;
+
+	flex-shrink: 0;
+
+	border-radius: 50%;
+
+	background: var(--li-primary);
+	color: #ffffff;
+
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.oe-page .sidebar-card h3 {
+	margin-bottom: 6px;
+
+	color: var(--li-text);
+
+	font-size: 1rem;
+	font-weight: 650;
+}
+
+.oe-page .sidebar-card p {
+	margin: 0;
+
+	color: var(--li-muted);
+
+	font-size: 0.88rem;
+	line-height: 1.65;
+}
+
+
+/* =========================================================
+   FLOW DIAGRAM
+========================================================= */
+
+.oe-page .flow {
+	position: relative;
+	z-index: 2;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 28px;
+
+	height: 100%;
+}
+
+.oe-page .flow-row {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+
+	width: 100%;
+}
+
+.oe-page .flow-node {
+	position: relative;
+	z-index: 3;
+
+	display: flex;
+	align-items: center;
+	gap: 15px;
+
+	min-width: 240px;
+	padding: 16px 20px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 16px;
+
+	background: #ffffff;
+
+	cursor: pointer;
+
+	box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+
+	transition:
+		transform 0.25s ease,
+		border-color 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+.oe-page .flow-node:hover {
+	transform: translateY(-5px);
+
+	border-color: var(--li-primary);
+
+	box-shadow: 0 15px 35px rgba(37, 99, 235, 0.10);
+}
+
+.oe-page .flow-node .icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 42px;
+	height: 42px;
+
+	flex-shrink: 0;
+
+	border-radius: 12px;
+
+	background: #eef2ff;
+
+	font-size: 20px;
+}
+
+.oe-page .flow-node h4 {
+	margin: 0;
+
+	color: var(--li-text);
+
+	font-size: 0.95rem;
+	font-weight: 650;
+}
+
+.oe-page .flow-node span {
+	display: block;
+
+	margin-top: 4px;
+
+	color: var(--li-muted);
+
+	font-size: 0.8rem;
+}
+
+.oe-page .flow-lines {
+	position: absolute;
+	inset: 0;
+
+	z-index: 1;
+
+	width: 100%;
+	height: 100%;
+
+	pointer-events: none;
+}
+
+.oe-page .line {
+	fill: none;
+
+	stroke: #9db7ff;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-dasharray: 8 10;
+
+	animation: li-flow 18s linear infinite;
+}
+
+@keyframes li-flow {
+	from {
+		stroke-dashoffset: 0;
+	}
+
+	to {
+		stroke-dashoffset: -220;
+	}
+}
+
+
+/* =========================================================
+   AI DECISION ENGINE
+========================================================= */
+
+.oe-page .ai-engine {
+	padding: 120px 0;
+}
+
+.oe-page .ai-header {
+	max-width: 760px;
+	margin: 0 auto 60px;
+
+	text-align: center;
+}
+
+.oe-page .ai-header h2 {
+	margin: 16px 0;
+
+	color: var(--li-text);
+
+	font-size: clamp(2.5rem, 4vw, 3.4rem);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.05em;
+}
+
+.oe-page .ai-header p {
+	margin: 0;
+
+	color: var(--li-muted);
+
+	font-size: 1.05rem;
+	line-height: 1.8;
+}
+
+.oe-page .ai-grid {
+	display: grid;
+	grid-template-columns: 0.9fr 1.1fr;
+	gap: 24px;
+}
+
+.oe-page .lead-card,
+.oe-page .analysis-card {
+	padding: 32px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 20px;
+
+	background: #ffffff;
+
+	box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+}
+
+.oe-page .card-title {
+	margin-bottom: 26px;
+
+	color: var(--li-text);
+
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.oe-page .field {
+	margin-bottom: 20px;
+}
+
+.oe-page .field label {
+	display: block;
+
+	margin-bottom: 6px;
+
+	color: var(--li-subtle);
+
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.oe-page .field span {
+	color: var(--li-text-secondary);
+
+	font-size: 0.95rem;
+	line-height: 1.7;
+}
+
+.oe-page .analysis-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	margin-bottom: 30px;
+}
+
+.oe-page .score-label {
+	margin-bottom: 5px;
+
+	color: var(--li-subtle);
+
+	font-size: 0.8rem;
+}
+
+.oe-page .score {
+	color: var(--li-text);
+
+	font-size: 3.5rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.oe-page .score span {
+	color: var(--li-subtle);
+
+	font-size: 1.2rem;
+}
+
+.oe-page .priority {
+	padding: 8px 14px;
+
+	border-radius: 999px;
+
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+}
+
+.oe-page .priority.high {
+	border: 1px solid #86efac;
+
+	background: #f0fdf4;
+	color: #16a34a;
+}
+
+.oe-page .analysis-section {
+	margin-bottom: 28px;
+}
+
+.oe-page .analysis-section h4 {
+	margin-bottom: 10px;
+
+	color: var(--li-text);
+
+	font-size: 1rem;
+}
+
+.oe-page .analysis-section p {
+	color: var(--li-muted);
+
+	line-height: 1.8;
+}
+
+.oe-page .analysis-section ul {
+	margin: 0;
+	padding-left: 20px;
+}
+
+.oe-page .analysis-section li {
+	margin: 10px 0;
+
+	color: var(--li-text-secondary);
+}
+
+.oe-page .confidence {
+	display: flex;
+	justify-content: space-between;
+
+	padding-top: 20px;
+
+	border-top: 1px solid var(--li-border);
+
+	color: var(--li-muted);
+
+	font-size: 0.9rem;
+}
+
+.oe-page .confidence strong {
+	color: #16a34a;
+
+	font-size: 1.25rem;
+}
+
+
+/* =========================================================
+   TECH STACK
+========================================================= */
+
+.oe-page .tech-stack {
+	padding: 120px 0;
+}
+
+.oe-page .tech-header {
+	max-width: 760px;
+	margin: 0 auto 60px;
+
+	text-align: center;
+}
+
+.oe-page .tech-header h2 {
+	margin: 16px 0;
+
+	color: var(--li-text);
+
+	font-size: clamp(2.5rem, 4vw, 3.4rem);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.05em;
+}
+
+.oe-page .tech-header p {
+	margin: 0;
+
+	color: var(--li-muted);
+
+	font-size: 1.05rem;
+	line-height: 1.8;
+}
+
+.oe-page .stack-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.oe-page .tool-card {
+	padding: 30px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 20px;
+
+	background: #ffffff;
+
+	box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+
+	transition:
+		transform 0.25s ease,
+		border-color 0.25s ease;
+}
+
+.oe-page .tool-card:hover {
+	transform: translateY(-5px);
+
+	border-color: #9db7ff;
+}
+
+.oe-page .tool-logo {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	width: 54px;
+	height: 54px;
+
+	margin-bottom: 20px;
+}
+
+.oe-page .tool-logo img {
+	width: 44px;
+	height: 44px;
+
+	object-fit: contain;
+}
+
+.oe-page .tool-card h3 {
+	margin-bottom: 6px;
+
+	color: var(--li-text);
+
+	font-size: 1.05rem;
+}
+
+.oe-page .tool-card > span {
+	display: block;
+
+	margin-bottom: 14px;
+
+	color: var(--li-subtle);
+
+	font-size: 0.72rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.oe-page .tool-card p {
+	margin: 0;
+
+	color: var(--li-muted);
+
+	line-height: 1.75;
+}
+
+
+/* =========================================================
+   OUTCOMES
+========================================================= */
+
+.oe-page .outcomes {
+	padding: 120px 0;
+}
+
+.oe-page .outcomes-header {
+	max-width: 760px;
+	margin: 0 auto 60px;
+
+	text-align: center;
+}
+
+.oe-page .outcomes-header h2 {
+	margin: 16px 0;
+
+	color: var(--li-text);
+
+	font-size: clamp(2.5rem, 4vw, 3.4rem);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.05em;
+}
+
+.oe-page .outcomes-header p {
+	color: var(--li-muted);
+
+	font-size: 1.05rem;
+	line-height: 1.8;
+}
+
+.oe-page .outcomes-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+}
+
+.oe-page .outcome-card {
+	padding: 36px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 20px;
+
+	background: #ffffff;
+
+	box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+}
+
+.oe-page .outcome-card h3 {
+	margin-bottom: 22px;
+
+	color: var(--li-text);
+
+	font-size: 1.35rem;
+}
+
+.oe-page .outcome-card ul {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.oe-page .outcome-card li {
+	padding: 13px 0;
+
+	border-bottom: 1px solid var(--li-border);
+
+	color: var(--li-text-secondary);
+}
+
+.oe-page .outcome-card li:last-child {
+	border-bottom: none;
+}
+
+
+/* =========================================================
+   PROJECT SUMMARY
+========================================================= */
+
+.oe-page .project-summary {
+	padding: 140px 0;
+}
+
+.oe-page .summary-box {
+	max-width: 920px;
+	margin: 0 auto;
+
+	padding: 64px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 24px;
+
+	background: var(--li-surface);
+
+	text-align: center;
+}
+
+.oe-page .summary-box h2 {
+	margin: 18px 0;
+
+	color: var(--li-text);
+
+	font-size: clamp(2.4rem, 4vw, 3.5rem);
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.05em;
+}
+
+.oe-page .summary-box p {
+	margin-bottom: 24px;
+
+	color: var(--li-muted);
+
+	font-size: 1.05rem;
+	line-height: 1.8;
+}
+
+.oe-page .summary-box .summary-intro {
+	color: var(--li-text-secondary);
+}
+
+.oe-page .summary-highlights {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+
+	margin: 50px 0;
+}
+
+.oe-page .summary-highlights div {
+	padding: 22px;
+
+	border: 1px solid var(--li-border);
+	border-radius: 16px;
+
+	background: #ffffff;
+}
+
+.oe-page .summary-highlights strong {
+	display: block;
+
+	margin-bottom: 6px;
+
+	color: var(--li-text);
+}
+
+.oe-page .summary-highlights span {
+	color: var(--li-muted);
+
+	font-size: 0.85rem;
+}
+
+.oe-page .summary-buttons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 12px;
+
+	margin-top: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+	.oe-page .li-hero {
+		grid-template-columns: 1fr;
+	}
+
+	.oe-page .li-hero-left {
+		max-width: none;
+	}
+
+	.oe-page .stats {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.oe-page .problem {
+		grid-template-columns: 1fr;
+	}
+
+	.oe-page .architecture-container {
+		grid-template-columns: 1fr;
+	}
+
+	.oe-page .architecture-sidebar {
+		position: relative;
+		top: 0;
+	}
+
+	.oe-page .stack-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+
+@media (max-width: 900px) {
+
+	.oe-page .ai-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.oe-page .outcomes-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.oe-page .summary-highlights {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+}
+
+
+@media (max-width: 700px) {
+
+	.oe-page section {
+		width: calc(100% - 2rem);
+	}
+
+	.oe-page .li-hero {
+		min-height: auto;
+
+		padding: 60px 0;
+	}
+
+	.oe-page .li-hero h1 {
+		font-size: 3.2rem;
+	}
+
+	.oe-page .li-hero-text {
+		font-size: 1rem;
+	}
+
+	.oe-page .li-hero-buttons {
+		flex-direction: column;
+	}
+
+	.oe-page .primary,
+	.oe-page .secondary {
+		width: 100%;
+		text-align: center;
+	}
+
+	.oe-page .stats {
+		grid-template-columns: 1fr;
+
+		margin-bottom: 60px;
+	}
+
+	.oe-page .card {
+		padding: 30px;
+	}
+
+	.oe-page .card h3 {
+		font-size: 2rem;
+	}
+
+	.oe-page .architecture,
+	.oe-page .ai-engine,
+	.oe-page .tech-stack,
+	.oe-page .outcomes {
+		padding: 80px 0;
+	}
+
+	.oe-page .architecture-canvas {
+		min-height: 500px;
+		padding: 20px;
+
+		overflow-x: auto;
+	}
+
+	.oe-page .flow {
+		min-width: 600px;
+	}
+
+	.oe-page .flow-row {
+		gap: 18px;
+	}
+
+	.oe-page .flow-node {
+		min-width: 210px;
+	}
+
+	.oe-page .stack-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.oe-page .summary-box {
+		padding: 36px 24px;
+	}
+
+	.oe-page .summary-highlights {
+		grid-template-columns: 1fr;
+	}
+
+	.oe-page .summary-buttons {
+		flex-direction: column;
+	}
+
+	.oe-page .summary-buttons .primary,
+	.oe-page .summary-buttons .secondary {
+		width: 100%;
+	}
+
+}

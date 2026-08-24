@@ -1,0 +1,349 @@
+<section id="architecture" class="architecture">
+
+    <div class="architecture-header">
+
+        <p class="eyebrow">
+            SYSTEM ARCHITECTURE
+        </p>
+
+        <h2>
+            A Signal-to-Send Outbound Pipeline
+        </h2>
+
+        <p>
+
+            Every lead moves through the same disciplined path — sourced,
+            enriched, scored, personalized and routed — before it ever
+            reaches an inbox.
+
+        </p>
+
+    </div>
+
+    <div class="architecture-container">
+
+        <!-- LEFT -->
+
+        <div class="architecture-canvas">
+        <svg class="flow-lines"
+     viewBox="0 0 900 900"
+     preserveAspectRatio="none">
+
+    <path
+        d="M450 70
+           L450 150"
+        class="line"/>
+
+    <path
+        d="M450 170
+           C340 220 250 240 170 270"
+        class="line"/>
+
+    <path
+        d="M450 170
+           L450 270"
+        class="line"/>
+
+    <path
+        d="M450 170
+           C560 220 650 240 730 270"
+        class="line"/>
+
+    <path
+        d="M730 330
+           L730 420"
+        class="line"/>
+
+    <path
+        d="M450 330
+           L450 520"
+        class="line"/>
+
+    <path
+        d="M730 480
+           C730 520 640 560 450 560"
+        class="line"/>
+
+    <path
+        d="M450 600
+           C390 650 340 670 280 700"
+        class="line"/>
+
+    <path
+        d="M450 600
+           C510 650 560 670 620 700"
+        class="line"/>
+
+    <path
+        d="M280 760
+           C280 820 450 820 450 840"
+        class="line"/>
+
+    <path
+        d="M450 860
+           L450 940"
+        class="line"/>
+
+</svg>
+
+            <div class="flow">
+
+    <div class="flow-node form">
+        <div class="icon">📋</div>
+        <div>
+            <h4>Source List</h4>
+            <span>Apollo.io</span>
+        </div>
+    </div>
+
+    <div class="flow-node webhook">
+        <div class="icon">🧮</div>
+        <div>
+            <h4>Consolidate</h4>
+            <span>Google Sheets</span>
+        </div>
+    </div>
+
+    <div class="flow-row three">
+
+        <div class="flow-node notify">
+
+            <div class="icon">🔎</div>
+
+            <div>
+
+                <h4>Enrich</h4>
+
+                <span>Clay</span>
+
+            </div>
+
+        </div>
+
+        <div class="flow-node database">
+
+            <div class="icon">🎯</div>
+
+            <div>
+
+                <h4>Score</h4>
+
+                <span>Weighted ICP model</span>
+
+            </div>
+
+        </div>
+
+        <div class="flow-node ai">
+
+            <div class="icon">🤖</div>
+
+            <div>
+
+                <h4>Personalize</h4>
+
+                <span>Claygent + AI</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="flow-node parse">
+
+        <div class="icon">⚙️</div>
+
+        <div>
+
+            <h4>Orchestrate</h4>
+
+            <span>n8n, self-hosted</span>
+
+        </div>
+
+    </div>
+
+    <div class="flow-node merge">
+
+        <div class="icon">🗂️</div>
+
+        <div>
+
+            <h4>Create Record</h4>
+
+            <span>Notion</span>
+
+        </div>
+
+    </div>
+
+    <div class="flow-row two">
+
+        <div class="flow-node update">
+
+            <div class="icon">📧</div>
+
+            <div>
+
+                <h4>Send Email</h4>
+
+                <span>Gmail</span>
+
+            </div>
+
+        </div>
+
+        <div class="flow-node analytics">
+
+            <div class="icon">🗒️</div>
+
+            <div>
+
+                <h4>Queue Manually</h4>
+
+                <span>LinkedIn + call</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="flow-node decision">
+
+        <div class="icon">🚦</div>
+
+        <div>
+
+            <h4>Tier Gate</h4>
+
+            <span>Hot only</span>
+
+        </div>
+
+    </div>
+
+    <div class="flow-node sales">
+
+        <div class="icon">📊</div>
+
+        <div>
+
+            <h4>Sync & Visualize</h4>
+
+            <span>Zapier → Looker Studio</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="architecture-sidebar">
+
+            <div class="sidebar-card active">
+
+                <span class="step-number">
+                    01
+                </span>
+
+                <div>
+
+                    <h3>
+                        Source & Enrich
+                    </h3>
+
+                    <p>
+
+                        Apollo sources the target list; Clay enriches it
+                        with verified contact data, technographic signals
+                        and live web research.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-card">
+
+                <span class="step-number">
+                    02
+                </span>
+
+                <div>
+
+                    <h3>
+                        Score & Personalize
+                    </h3>
+
+                    <p>
+
+                        A weighted formula scores firmographic, persona
+                        and signal fit. AI drafts a distinct email,
+                        LinkedIn message and call script per lead.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-card">
+
+                <span class="step-number">
+                    03
+                </span>
+
+                <div>
+
+                    <h3>
+                        Orchestrate & Route
+                    </h3>
+
+                    <p>
+
+                        Self-hosted n8n creates the CRM record in Notion,
+                        then checks the lead's tier before deciding what
+                        happens next.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-card">
+
+                <span class="step-number">
+                    04
+                </span>
+
+                <div>
+
+                    <h3>
+                        Human-Gated Send
+                    </h3>
+
+                    <p>
+
+                        Only Hot-tier leads trigger an automatic email.
+                        LinkedIn and calls are queued for manual,
+                        compliant execution.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
