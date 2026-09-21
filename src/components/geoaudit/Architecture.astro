@@ -1,0 +1,199 @@
+<section id="architecture" class="architecture">
+
+    <div class="architecture-header">
+
+        <p class="eyebrow">
+            SYSTEM ARCHITECTURE
+        </p>
+
+        <h2>
+            A Live Audit Pipeline, Not a Cached Score
+        </h2>
+
+        <p>
+
+            Every submitted URL runs through the same real pipeline —
+            technical checks, four parallel live citation tests, and
+            AI-generated recommendations — in under 20 seconds.
+
+        </p>
+
+    </div>
+
+    <div class="architecture-container">
+
+        <!-- LEFT -->
+
+        <div class="architecture-canvas">
+        <svg class="flow-lines"
+     viewBox="0 0 900 900"
+     preserveAspectRatio="none">
+
+    <!-- Submit -> Prepare -->
+    <path d="M450 90 L450 140" class="line"/>
+
+    <!-- Prepare -> Generate Queries -->
+    <path d="M450 200 L450 250" class="line"/>
+
+    <!-- Generate Queries -> 4 engines (fan out) -->
+    <path d="M450 310 C400 335 350 345 310 365" class="line"/>
+    <path d="M450 310 C500 335 550 345 590 365" class="line"/>
+    <path d="M450 310 C320 350 240 420 240 465" class="line"/>
+    <path d="M450 310 C580 350 660 420 660 465" class="line"/>
+
+    <!-- 4 engines -> Merge (fan in) -->
+    <path d="M310 425 C350 470 400 490 450 515" class="line"/>
+    <path d="M590 425 C550 470 500 490 450 515" class="line"/>
+    <path d="M240 530 C240 570 340 590 450 615" class="line"/>
+    <path d="M660 530 C660 570 560 590 450 615" class="line"/>
+
+    <!-- Merge -> Recommendations -->
+    <path d="M450 645 L450 695" class="line"/>
+
+    <!-- Recommendations -> Store -->
+    <path d="M450 755 L450 805" class="line"/>
+
+</svg>
+
+            <div class="flow">
+
+    <!-- Row 1 -->
+    <div class="flow-node form">
+        <div class="icon">🔗</div>
+        <div>
+            <h4>Submit URL</h4>
+            <span>Public landing page</span>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="flow-node webhook">
+        <div class="icon">⚡</div>
+        <div>
+            <h4>Clean &amp; Audit</h4>
+            <span>n8n webhook + technical checks</span>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="flow-node parse">
+        <div class="icon">✍️</div>
+        <div>
+            <h4>Generate Test Queries</h4>
+            <span>Perplexity, brand-agnostic</span>
+        </div>
+    </div>
+
+    <!-- Row 4: engines, top pair -->
+    <div class="flow-row two">
+
+        <div class="flow-node ai">
+            <div class="icon">🟢</div>
+            <div>
+                <h4>Query ChatGPT</h4>
+                <span>Live citation check</span>
+            </div>
+        </div>
+
+        <div class="flow-node ai">
+            <div class="icon">🟠</div>
+            <div>
+                <h4>Query Claude</h4>
+                <span>Live citation check</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Row 5: engines, bottom pair -->
+    <div class="flow-row two">
+
+        <div class="flow-node ai">
+            <div class="icon">🔵</div>
+            <div>
+                <h4>Query Perplexity</h4>
+                <span>Live citation check</span>
+            </div>
+        </div>
+
+        <div class="flow-node ai">
+            <div class="icon">🔷</div>
+            <div>
+                <h4>Query Gemini</h4>
+                <span>Live citation check</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Row 6 -->
+    <div class="flow-node merge">
+        <div class="icon">🔀</div>
+        <div>
+            <h4>Merge &amp; Score</h4>
+            <span>Combine all 4 results</span>
+        </div>
+    </div>
+
+    <!-- Row 7 -->
+    <div class="flow-node decision">
+        <div class="icon">🤖</div>
+        <div>
+            <h4>Generate Recommendations</h4>
+            <span>LLM synthesis of the full audit</span>
+        </div>
+    </div>
+
+    <!-- Row 8 -->
+    <div class="flow-node sales">
+        <div class="icon">🗄️</div>
+        <div>
+            <h4>Store &amp; Respond</h4>
+            <span>Supabase + live report</span>
+        </div>
+    </div>
+
+</div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="architecture-sidebar">
+
+            <div class="sidebar-card active">
+                <span class="step-number">01</span>
+                <div>
+                    <h3>Submit &amp; Prepare</h3>
+                    <p>A URL comes in through the public webhook and gets normalized before anything else runs.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <span class="step-number">02</span>
+                <div>
+                    <h3>Live Citation Testing</h3>
+                    <p>Four independent API calls — real web-search-grounded queries, not cached lookups.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <span class="step-number">03</span>
+                <div>
+                    <h3>Merge &amp; Score</h3>
+                    <p>Technical and citation results combine into one visibility score.</p>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <span class="step-number">04</span>
+                <div>
+                    <h3>Recommend &amp; Store</h3>
+                    <p>An LLM turns the raw findings into a prioritized fix list, then everything is saved.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

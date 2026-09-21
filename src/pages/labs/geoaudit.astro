@@ -1,0 +1,40 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import Hero from "../../components/geoaudit/Hero.astro";
+import Stats from "../../components/geoaudit/Stats.astro";
+import ProblemSolution from "../../components/geoaudit/ProblemSolution.astro";
+import Architecture from "../../components/geoaudit/Architecture.astro";
+import AIDecision from "../../components/geoaudit/AIDecision.astro";
+import TechStack from "../../components/geoaudit/TechStack.astro";
+import Outcomes from "../../components/geoaudit/Outcomes.astro";
+import ProjectSummary from "../../components/geoaudit/ProjectSummary.astro";
+
+import "../../styles/geoaudit.css";
+---
+
+<Layout
+  title="GeoAudit — AI Visibility Audit Tool | MK"
+  description="A live, public AEO/GEO audit tool that tests real citation behavior across ChatGPT, Claude, Perplexity and Gemini, built with n8n, Supabase and Cloudflare.">
+
+<div class="geo-page">
+
+    <Hero />
+
+    <Stats />
+
+    <ProblemSolution />
+
+    <Architecture />
+
+    <AIDecision />
+
+    <TechStack />
+
+    <Outcomes />
+
+    <ProjectSummary />
+
+</div>
+
+</Layout>
