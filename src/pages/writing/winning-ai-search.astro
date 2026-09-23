@@ -1,11 +1,27 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import "../../styles/writing-article.css";
+
+// TODO: confirm the real publish date (taken from the first git commit of this page)
+const articleSchema = {
+	"@type": "Article",
+	"@id": "https://mkumar.xyz/writing/winning-ai-search/#article",
+	headline: "Winning AI Search Starts Long Before AI",
+	description: "Why the best GEO strategy is still great SEO.",
+	image: "https://mkumar.xyz/images/writing/winning-ai-search.png",
+	datePublished: "2026-08-13",
+	author: { "@id": "https://mkumar.xyz/#person" },
+	publisher: { "@id": "https://mkumar.xyz/#person" },
+	isPartOf: { "@id": "https://mkumar.xyz/#website" },
+	mainEntityOfPage: "https://mkumar.xyz/writing/winning-ai-search/",
+};
 ---
 
 <Layout
 	title="Winning AI Search Starts Long Before AI | Mrityunjay Kumar"
 	description="Why the best GEO strategy is still great SEO."
+	ogType="article"
+	schema={articleSchema}
 >
 
 <main class="article-page">

@@ -1,0 +1,24 @@
+# Mrityunjay Kumar
+
+> Mrityunjay Kumar is a B2B SaaS growth and go-to-market (GTM) marketer with 9+ years across demand generation, paid acquisition, SEO, content, CRM and marketing automation. He builds working AI and automation tools for GTM teams, including GeoAudit, a public tool that checks whether AI assistants cite a website.
+
+Not to be confused with other people named Mrityunjay Kumar. This site (mkumar.xyz) is the personal site of the marketer described above. LinkedIn: https://www.linkedin.com/in/mjay7/ · GitHub: https://github.com/mjay0709
+
+## About
+
+- [Home](https://mkumar.xyz/): Overview of his approach to connected marketing systems
+- [Expertise](https://mkumar.xyz/expertise/): GTM strategy, paid acquisition, SEO, content, product marketing, lifecycle, CRM and analytics
+- [Contact](https://mkumar.xyz/contact/): How to reach him about roles or projects
+- [Resume (PDF)](https://mkumar.xyz/resume.pdf)
+
+## Labs (working projects)
+
+- [GeoAudit](https://mkumar.xyz/labs/geoaudit/): Public AEO/GEO audit tool that tests citation behavior across ChatGPT, Claude, Perplexity and Gemini. Live at https://geoaudit.mkumar.xyz
+- [Outbound Intelligence Engine](https://mkumar.xyz/labs/outbound-intelligence/): AI-scored, multi-channel outbound automation built on a free-tier GTM stack
+- [Lead Intelligence Automation](https://mkumar.xyz/labs/lead-intelligence/): AI-powered lead qualification workflow
+- [GTM Execution](https://mkumar.xyz/labs/gtm-execution/): Concept workspace demonstrating end-to-end B2B SaaS marketing execution
+
+## Writing
+
+- [Winning AI Search Starts Long Before AI](https://mkumar.xyz/writing/winning-ai-search/): Why the best GEO strategy is still great SEO
+- [From Click to Customer](https://mkumar.xyz/writing/from-click-to-customer/): A practical guide to building a B2B SaaS revenue engine

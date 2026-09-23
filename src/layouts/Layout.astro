@@ -7,12 +7,69 @@ import "../scripts/posthog";
 interface Props {
 	title?: string;
 	description?: string;
+	/** Page-specific JSON-LD node(s), merged into the site-wide @graph */
+	schema?: Record<string, unknown> | Record<string, unknown>[];
+	/** Keep utility/test pages out of search and AI indexes */
+	noindex?: boolean;
+	ogType?: "website" | "article" | "profile";
 }
 
 const {
-	title = "MK | Growth & Marketing Operations",
-	description = "Building CRM, Automation & GTM Systems for B2B SaaS."
+	title = "Mrityunjay Kumar | Growth & GTM Marketing",
+	description = "Mrityunjay Kumar is a B2B SaaS growth and GTM marketer building marketing, CRM and automation systems.",
+	schema,
+	noindex = false,
+	ogType = "website",
 } = Astro.props;
+
+const SITE = "https://mkumar.xyz";
+// Self-referencing canonical per page (was hard-coded to the homepage)
+const canonical = new URL(Astro.url.pathname, Astro.site ?? SITE).href;
+const ogImage = new URL("/headshot.png", SITE).href;
+
+// Site-wide entity graph: who this site is about.
+const person = {
+	"@type": "Person",
+	"@id": `${SITE}/#person`,
+	name: "Mrityunjay Kumar",
+	alternateName: "MK",
+	url: `${SITE}/`,
+	image: ogImage,
+	jobTitle: "Growth & GTM Marketing Leader",
+	description:
+		"B2B SaaS growth and GTM marketer with 9+ years across demand generation, paid acquisition, SEO, content, CRM and marketing automation. Builds AI and automation tools for GTM, including GeoAudit, an AI search visibility audit tool.",
+	knowsAbout: [
+		"B2B SaaS marketing",
+		"Go-to-market strategy",
+		"Demand generation",
+		"Paid acquisition",
+		"Search engine optimization",
+		"Generative engine optimization",
+		"Marketing automation",
+		"HubSpot",
+		"Salesforce",
+		"n8n",
+	],
+	sameAs: [
+		"https://www.linkedin.com/in/mjay7/",
+		"https://github.com/mjay0709",
+	],
+};
+
+const website = {
+	"@type": "WebSite",
+	"@id": `${SITE}/#website`,
+	url: `${SITE}/`,
+	name: "Mrityunjay Kumar",
+	publisher: { "@id": `${SITE}/#person` },
+	inLanguage: "en",
+};
+
+const pageNodes = schema ? (Array.isArray(schema) ? schema : [schema]) : [];
+const jsonLd = {
+	"@context": "https://schema.org",
+	"@graph": [person, website, ...pageNodes],
+};
 ---
 
 
@@ -46,17 +103,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-<link rel="canonical" href="https://mkumar.xyz" />
+<link rel="canonical" href={canonical} />
+{noindex && <meta name="robots" content="noindex, follow" />}
 
-<meta property="og:type" content="website" />
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content="Mrityunjay Kumar" />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:url" content="https://mkumar.xyz" />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-	
+<meta name="twitter:image" content={ogImage} />
+
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
 	</head>
 
 <script type="module">

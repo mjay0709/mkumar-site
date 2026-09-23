@@ -1,11 +1,27 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import "../../styles/writing-article.css";
+
+// TODO: confirm the real publish date (taken from the first git commit of this page)
+const articleSchema = {
+	"@type": "Article",
+	"@id": "https://mkumar.xyz/writing/from-click-to-customer/#article",
+	headline: "From Click to Customer",
+	description: "A practical guide to building a B2B SaaS revenue engine.",
+	image: "https://mkumar.xyz/images/writing/from-click-to-customer.png",
+	datePublished: "2026-08-13",
+	author: { "@id": "https://mkumar.xyz/#person" },
+	publisher: { "@id": "https://mkumar.xyz/#person" },
+	isPartOf: { "@id": "https://mkumar.xyz/#website" },
+	mainEntityOfPage: "https://mkumar.xyz/writing/from-click-to-customer/",
+};
 ---
 
 <Layout
 	title="From Click to Customer | Mrityunjay Kumar"
 	description="A practical guide to building a B2B SaaS revenue engine."
+	ogType="article"
+	schema={articleSchema}
 >
 
 <main class="article-page">

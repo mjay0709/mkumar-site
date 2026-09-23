@@ -1,0 +1,22 @@
+# robots.txt for mkumar.xyz
+# Everything public on this site is meant to be read and cited,
+# including by AI assistants and answer engines.
+
+User-agent: *
+Allow: /
+
+# AI crawlers, listed explicitly so the intent is unambiguous
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://mkumar.xyz/sitemap-index.xml

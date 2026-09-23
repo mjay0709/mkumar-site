@@ -11,11 +11,23 @@ import Outcomes from "../../components/geoaudit/Outcomes.astro";
 import ProjectSummary from "../../components/geoaudit/ProjectSummary.astro";
 
 import "../../styles/geoaudit.css";
+
+const toolSchema = {
+  "@type": "SoftwareApplication",
+  "@id": "https://geoaudit.mkumar.xyz/#app",
+  name: "GeoAudit",
+  url: "https://geoaudit.mkumar.xyz",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description: "A public AEO/GEO audit tool that checks whether ChatGPT, Claude, Perplexity and Gemini cite a website, then produces a prioritized fix list.",
+  creator: { "@id": "https://mkumar.xyz/#person" },
+};
 ---
 
 <Layout
-  title="GeoAudit — AI Visibility Audit Tool | MK"
-  description="A live, public AEO/GEO audit tool that tests real citation behavior across ChatGPT, Claude, Perplexity and Gemini, built with n8n, Supabase and Cloudflare.">
+  title="GeoAudit — AI Visibility Audit Tool | Mrityunjay Kumar"
+  description="A live, public AEO/GEO audit tool that tests real citation behavior across ChatGPT, Claude, Perplexity and Gemini, built with n8n, Supabase and Cloudflare."
+  schema={toolSchema}>
 
 <div class="geo-page">
 

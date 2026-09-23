@@ -11,5 +11,10 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  integrations: [sitemap()]
+  integrations: [
+    sitemap({
+      // Keep test/utility pages out of the sitemap
+      filter: (page) => !page.includes('/book-demo'),
+    }),
+  ]
 });
